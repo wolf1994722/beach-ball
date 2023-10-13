@@ -1,0 +1,32 @@
+# Beachy Beachy Ball
+# Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
+# Licensed under the GNU Affero General Public License v3.0.
+# https://www.gnu.org/licenses/gpl-3.0.html
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Other
+TODO.md
