@@ -1,7 +1,4 @@
-// Beachy Beachy Ball
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
-// Licensed under the GNU Affero General Public License v3.0.
-// https://www.gnu.org/licenses/gpl-3.0.html
+// Copyright (c) 2023 code eye <code.eye1016@gmail.com>
 
 import { useState } from "react";
 import useGame from "../stores/useGame.js";
@@ -305,18 +302,11 @@ export default function MainMenu() {
 
       <div className="main-menu-about-section">
         <div className="main-menu-about">
-          <a href="https://github.com/michaelkolesidis/beachy-beachy-ball">
+          <a href="https://oyatech.co.jp">
             © 2023 oyatech.co.jp
           </a>
         </div>
       </div>
-      <a href="https://michaelkolesidis.com" target="_blank">
-        <img
-          className="author-logo"
-          src={MichaelLogo}
-          alt="Author's logo"
-        ></img>
-      </a>
     </div>
   );
 }

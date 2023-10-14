@@ -1,7 +1,4 @@
-// Beachy Beachy Ball
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
-// Licensed under the GNU Affero General Public License v3.0.
-// https://www.gnu.org/licenses/gpl-3.0.html
+// Copyright (c) 2023 code eye <code.eye1016@gmail.com>
 
 import { useRapier, RigidBody } from "@react-three/rapier";
 import { useFrame, useLoader } from "@react-three/fiber";
@@ -15,6 +12,7 @@ export default function Ball() {
     THREE.TextureLoader,
     "./textures/beach_ball_texture.png"
   );
+
 
   const body = useRef();
   const [subscribeKeys, getKeys] = useKeyboardControls();
@@ -49,15 +47,16 @@ export default function Ball() {
     const unsubscribeReset = useGame.subscribe(
       (state) => state.phase,
       (phase) => {
+        console.log(phase);
         if (phase === "ready") {
           reset();
         }
-        if (phase === "ready") {
+        if (phase === "playing") {
           reset();
         }
-        if (phase === "ready") {
-          reset();
-        }
+        // if (phase === "ready") {
+        //   reset();
+        // }
       }
     );
 
@@ -71,7 +70,7 @@ export default function Ball() {
         }
       }
     );
-
+    
     const unsubscribeAny = subscribeKeys(() => {
       start();
     });

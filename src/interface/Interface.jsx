@@ -1,7 +1,4 @@
-// Beachy Beachy Ball
-// Copyright (c) 2023 Michael Kolesidis <michael.kolesidis@gmail.com>
-// Licensed under the GNU Affero General Public License v3.0.
-// https://www.gnu.org/licenses/gpl-3.0.html
+// Copyright (c) 2023 code eye <code.eye1016@gmail.com>
 
 import { useKeyboardControls } from "@react-three/drei";
 import { useEffect, useRef, useState } from "react";
@@ -243,7 +240,7 @@ export default function Interface() {
             </div>
             <div className="modal-about-area">
               <div className="modal-about">
-                <a href="https://github.com/michaelkolesidis/beachy-beachy-ball">
+                <a href="https://oyatech.co.jp">
                   © 2023 Oyatech.
                 </a>
               </div>
